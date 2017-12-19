@@ -31,6 +31,7 @@ public class IndexController {
     @RequestMapping("/initData")
     @ResponseBody
     public String initData() {
+        personService.initData();
         return "init data successfully";
     }
 }

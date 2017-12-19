@@ -26,9 +26,9 @@ public class PersonServiceImpl implements PersonService {
   @Transactional
   public void initData() {
     Set<Person> dummyData = Sets.newHashSet();
-    dummyData.add(new Person(1L,"Jack", "Fang"));
-    dummyData.add(new Person(2L,"Lucy", "Deng"));
-    dummyData.add(new Person(3L,"Leo", "Fang"));
+    dummyData.add(new Person("Jack", "Fang"));
+    dummyData.add(new Person("Lucy", "Deng"));
+    dummyData.add(new Person("Leo", "Fang"));
     personRepository.save(dummyData);
   }
 
